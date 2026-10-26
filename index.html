@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Tasks</h1>
+<div class="input-group">
+<input type="text" id="task-input" data-testid="task-input" placeholder="Add a task..." aria-label="New task" maxlength="500">
+<button id="task-add" data-testid="task-add">Add</button>
+</div>
+<p id="storage-notice" role="status"></p>
+<ul id="task-list"></ul>
+<p>Remaining: <span id="task-remaining" data-testid="task-remaining">0</span></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
